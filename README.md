@@ -1,4 +1,4 @@
-# Create Rest API using Springboot and MySql Database
+# Create Rest API using Springboot and Postgres Database
 
 ### Introduction
 On this repo we will learn how to create REST API using Springboot, 
