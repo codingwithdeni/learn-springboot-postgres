@@ -2,22 +2,22 @@
 
 ### Introduction
 On this repo we will learn how to create REST API using Springboot, 
-that apis will have CRUD function for connecting and storing data to MySql database. 
+that apis will have CRUD function for connecting and storing data to Postgres database. 
 
 If you want read the full articles all about this repo, 
-you can see on this [link](https://deni-setiawan.medium.com/create-rest-api-using-springboot-and-mysql-808cdf9e3bdd)
+you can see on this [link](https://medium.com/@deni-setiawan/create-rest-api-using-springboot-and-postgres-74200db11ae6)
 
 ### Requirements
 - Maven 3+
 - Java 8+
 - IDE Intelij
 - Docker
-- MySql Database (Container)
+- Postgres Database (Docker Container)
 - Postman 
 
 ### Dependency
 - Lombok
-- MySql Driver
+- Postgres Driver
 - Spring Data JPA
 - Spring Web
 
