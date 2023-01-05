@@ -18,6 +18,7 @@ import java.util.Optional;
 
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -33,7 +34,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public ResponseEntity save(UserDTO requestDTO) {
         Validator validator = userValidator.requestValidator(requestDTO);
         if (validator.isSuccess()) {
@@ -74,7 +74,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public ResponseEntity update(Long id, UserDTO requestDTO) {
         Validator validator = userValidator.requestValidatorForUpdate(requestDTO);
         if (validator.isSuccess()) {
@@ -113,7 +112,6 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    @Transactional
     public ResponseEntity getAll() {
         List<User> list = userRepo.findAll();
         if (!list.isEmpty()) {
@@ -133,7 +131,6 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    @Transactional
     public ResponseEntity findById(Long id) {
         Optional<User> optional = userRepo.findById(id);
         if (optional.isPresent()) {
@@ -154,7 +151,6 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    @Transactional
     public ResponseEntity delete(Long id) {
         Optional<User> optional = userRepo.findById(id);
         if (optional.isPresent()) {
@@ -175,7 +171,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public ResponseEntity deleteAll() {
         userRepo.deleteAll();
 
