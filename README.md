@@ -4,8 +4,7 @@
 On this repo we will learn how to create REST API using Springboot, 
 that apis will have CRUD function for connecting and storing data to Postgres database. 
 
-If you want read the full articles all about this repo, 
-you can see on this [link](https://medium.com/@deni-setiawan/create-rest-api-using-springboot-and-postgres-74200db11ae6)
+If you want read the full articles all about this repo, you can see on this article [https://deni-setiawan.medium.com/] (https://medium.com/@deni-setiawan/create-rest-api-using-springboot-and-postgres-74200db11ae6)
 
 ### Requirements
 - Maven 3+
