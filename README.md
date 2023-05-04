@@ -29,5 +29,5 @@ If you want read the full articles all about this repo, you can see on this [art
 
 
 ### contributors
-- @denitiawan
-- @denpaden
+- https://github.com/denitiawan
+- https://github.com/denpaden
